@@ -15,6 +15,7 @@ from .embeddings import (
     OpenAIEmbedder,
     _mock_embed,
 )
+from .heading_chunker import HeadingSectionChunker
 from .models import Document
 from .store import EmbeddingStore
 
@@ -23,6 +24,7 @@ __all__ = [
     "FixedSizeChunker",
     "SentenceChunker",
     "RecursiveChunker",
+    "HeadingSectionChunker",
     "ChunkingStrategyComparator",
     "compute_similarity",
     "EmbeddingStore",
