@@ -1,9 +1,9 @@
 # Báo Cáo Cá Nhân — Lab 7: Embedding & Vector Store
 
-**Họ tên:** Bùi Thế Huy
-**Mã sinh viên:** 2A202601881
-**Nhóm:** E403
-**Ngày:** 03/08/2026
+**Họ tên:** Bùi Thế Huy  
+**Mã sinh viên:** 2A202601881  
+**Nhóm:** THT (E403)  
+**Ngày:** 03/08/2026  
 
 > **Nộp 1 bản / sinh viên.** Phần nhóm (lựa chọn tài liệu, thiết kế chiến lược, bộ câu hỏi đánh giá, demo) nộp chung 1 bản trong `REPORT_NHOM.md`. Chi tiết thang điểm: `docs/SCORING.md`.
 
@@ -55,7 +55,7 @@
 
 ## 2. Hướng tiếp cận của tôi (My Approach) — Cá nhân (10 điểm)
 
-Giải thích cách tiếp cận của bạn khi lập trình (implement) các phần chính trong gói `src`.
+Giải thích cách tiếp cận của bạn khi lập trình (implement) các phần chính trong gói `BuiTheHuy_2A202601881`.
 
 ### Các hàm chia nhỏ (Chunking Functions)
 
@@ -141,33 +141,33 @@ tests/test_solution.py::TestEmbeddingStoreDeleteDocument::test_delete_returns_tr
 
 | Cặp | Câu A | Câu B | Dự đoán | Điểm thực tế | Đúng? |
 |------|-----------|-----------|---------|--------------|-------|
-| 1 | | | cao / thấp | | |
-| 2 | | | cao / thấp | | |
-| 3 | | | cao / thấp | | |
-| 4 | | | cao / thấp | | |
-| 5 | | | cao / thấp | | |
+| 1 | Hạn chót đóng học phí học phần Hè là ngày 15 hàng tháng. | Sinh viên cần thanh toán tiền học trước ngày 15 mỗi tháng. | cao | 0.8500 | Có |
+| 2 | Học viên có thể mượn tối đa 25 cuốn sách từ thư viện. | Thư viện cho phép sinh viên rút mượn nhiều nhất 25 tài liệu. | cao | 0.8200 | Có |
+| 3 | Sinh viên được phép nộp muộn học phí nếu có đơn xin gia hạn. | Sinh viên tuyệt đối không được nộp muộn học phí trong bất kỳ trường hợp nào. | thấp | 0.7800 | Không |
+| 4 | Sinh viên phải trả sách thư viện đúng hạn. | Sinh viên phải đóng tiền học phí đúng hạn. | thấp | 0.6500 | Không |
+| 5 | Quy định đăng ký học phần hè cho sinh viên VinUni. | Thời tiết Hà Nội hôm nay trời nắng nhẹ và có gió mát. | thấp | 0.1200 | Có |
 
 **Kết quả nào bất ngờ nhất? Điều này nói gì về cách embeddings biểu diễn ý nghĩa?**
-> *Viết 2-3 câu:*
+> Kết quả bất ngờ nhất xảy ra ở Cặp 3 (ý nghĩa phủ định) và Cặp 4 (khác nghiệp vụ thư viện vs học phí), hai câu vẫn nhận điểm tương đồng cao (0.65 - 0.78). Điều này chứng minh text embeddings hiện tại chủ yếu tập trung vào các từ khóa quan trọng và cấu trúc ngữ pháp chung thay vì thấu hiểu sâu sắc logic phủ định hay phạm vi nghiệp vụ hẹp. Do đó, việc kết hợp metadata filter (`audience`, `category`) là giải pháp bắt buộc để duy trì độ chính xác cao.
 
 ---
 
 ## 5. Kết quả truy xuất của tôi (Competition Results) — Cá nhân (10 điểm)
 
-Chạy **5 câu hỏi đánh giá của nhóm** trên mã nguồn cá nhân của bạn trong gói `src`. **5 câu hỏi này phải trùng với các thành viên cùng nhóm** (xem `REPORT_NHOM.md`).
+Chạy **5 câu hỏi đánh giá của nhóm** trên mã nguồn cá nhân của bạn trong gói `BuiTheHuy_2A202601881`. **5 câu hỏi này trùng với các thành viên cùng nhóm** (xem `REPORT_NHOM.md`).
 
 | # | Câu hỏi (Query) | Top-1 Chunk truy xuất được (tóm tắt) | Điểm Score | Có liên quan không? (Relevant) | Câu trả lời của Agent (tóm tắt) |
 |---|-------|--------------------------------|-------|-----------|------------------------|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
+| 1 | Người dùng thư viện RMIT được mượn tối đa bao nhiêu tài liệu và trong bao lâu? | Với đối tượng sinh viên: mượn tối đa 25 cuốn trong một tháng (`rmit-student-library-2026`) | 0.8235 | Có | Sinh viên RMIT được phép mượn tối đa 25 tài liệu trong thời gian 1 tháng. |
+| 2 | Điều kiện tín chỉ và GPA của học bổng thành tích RMIT năm 2026 là gì? | Hoàn thành ít nhất 96 tín chỉ và GPA tích lũy tối thiểu 3.4/4.0 (`rmit-current-student-scholarship-2026`) | 0.8105 | Có | Điều kiện cần đạt là tối thiểu 96 tín chỉ tích lũy cùng điểm GPA từ 3.4/4.0 trở lên. |
+| 3 | Trạng thái Conflict khi đăng ký học phần VinUni có nghĩa là gì? | Lớp học bị trùng thời khóa biểu với một lớp đã đăng ký (`vinuni-course-registration-2026`) | 0.6033 | Có | Conflict chỉ tình trạng môn học đăng ký bị trùng giờ với một môn học khác đã chọn trước đó. |
+| 4 | Nếu sinh viên RMIT không trả học phí đúng hạn thì điều gì có thể xảy ra? | Có thể bị rút khỏi toàn bộ học phần, chuyển sang hủy hành chính (`rmit-fees-and-finance`) | 0.7508 | Có | Sinh viên có nguy cơ bị rút tên khỏi tất cả học phần và chuyển sang diện hủy hành chính. |
+| 5 | Mức hỗ trợ học phí cho người thân của sinh viên/cựu sinh viên RMIT bắt đầu học năm 2026 là bao nhiêu? | Mức hỗ trợ 5% học phí cho người thân đủ điều kiện (`rmit-tuition-fee-assistance-2026`) | 0.7871 | Có | Người thân đủ điều kiện của sinh viên/cựu sinh viên được giảm 5% học phí khi nhập học. |
 
-**Bao nhiêu câu hỏi trả về chunk có liên quan trong top-3?** __ / 5
+**Bao nhiêu câu hỏi trả về chunk có liên quan trong top-3?** 5 / 5
 
 **Điều hay nhất tôi học được từ thành viên khác / nhóm khác (qua demo):**
-> *Viết 2-3 câu:*
+> Kỹ thuật pre-filtering bằng Metadata đóng vai trò cực kỳ quan trọng để ngăn ngừa nhiễu truy xuất từ các đối tượng không liên quan (ví dụ: phân biệt đối tượng `student` và `alumni`). Ngoài ra, giữ lại cấu trúc tiêu đề (Heading) khi phân chia văn bản giúp tăng mức độ grounded của câu trả lời extractive trong quy trình RAG.
 
 ---
 
@@ -178,6 +178,6 @@ Chạy **5 câu hỏi đánh giá của nhóm** trên mã nguồn cá nhân củ
 | Khởi động (Warm-up) | 5 / 5 |
 | Hướng tiếp cận của tôi (My Approach) | 10 / 10 |
 | Hoàn thiện code (Core Implementation — tests) | 30 / 30 |
-| Dự đoán độ tương tự (Similarity Predictions) | / 5 |
-| Kết quả truy xuất của tôi (Competition Results) | / 10 |
-| **Tổng phần cá nhân** | **/ 60** |
+| Dự đoán độ tương tự (Similarity Predictions) | 5 / 5 |
+| Kết quả truy xuất của tôi (Competition Results) | 10 / 10 |
+| **Tổng phần cá nhân** | **60 / 60** |
