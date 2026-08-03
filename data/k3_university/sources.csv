@@ -1,3 +1,7 @@
 doc_id,file_path,title,source_url,retrieved_at,document_version,license_or_permission
-k3-course-registration,data/k3_university/course-registration.md,Đăng ký học phần,https://example.edu/hoc-vu/dang-ky-hoc-phan,2026-08-02,2026.1,example-template-replace-me
-k3-library-services,data/k3_university/library-services.md,Dịch vụ thư viện,https://example.edu/thu-vien/dich-vu,2026-08-02,2026.1,example-template-replace-me
+vinuni-course-registration-2026,data/k3_university/course-registration.md,Đăng ký học phần VinUni học kỳ Hè 2026,https://registrar.vinuni.edu.vn/2026/06/29/announcement-launch-of-the-new-student-portal-for-summer-2026-course-registration/,2026-08-03,2026-06-29,public-page
+rmit-student-library-2026,data/k3_university/library-services.md,Dịch vụ thư viện RMIT dành cho sinh viên,https://www.rmit.edu.vn/students/student-news-and-events/student-news/2026/newbie-101-unlock-library-power,2026-08-03,2026,public-page
+rmit-alumni-library,data/k3_university/alumni-library.md,Chính sách mượn tài liệu dành cho cựu sinh viên RMIT,https://www.rmit.edu.vn/libraryvn/borrowing-and-resources/borrowing-and-returning/borrowing-for-alumni,2026-08-03,not-stated,public-page
+rmit-current-student-scholarship-2026,data/k3_university/current-student-scholarship.md,Học bổng thành tích học tập RMIT cho sinh viên hiện tại năm 2026,https://www.rmit.edu.vn/study-at-rmit/scholarships/current-student-scholarships,2026-08-03,2026,public-page
+rmit-tuition-fee-assistance-2026,data/k3_university/tuition-fee-assistance.md,Chính sách hỗ trợ học phí RMIT Vietnam năm 2026,https://www.rmit.edu.vn/study-at-rmit/tuition-fees/tuition-fee-assistance,2026-08-03,2026,public-page
+rmit-fees-and-finance,data/k3_university/fees-and-finance.md,Hỏi đáp phí và tài chính dành cho sinh viên RMIT,https://www.rmit.edu.vn/students/support/student-connect/ask-about-fees-and-finance,2026-08-03,not-stated,public-page

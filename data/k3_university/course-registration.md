@@ -1,18 +1,26 @@
 ---
-doc_id: k3-course-registration
-title: Đăng ký học phần
-audience: student            # student | faculty | staff | all
-department: academic-affairs
+doc_id: vinuni-course-registration-2026
+title: Đăng ký học phần VinUni học kỳ Hè 2026
+audience: student
+institution: VinUniversity
+department: registrar
+category: course-registration
 language: vi
-source_url: https://example.edu/hoc-vu/dang-ky-hoc-phan
-retrieved_at: 2026-08-02
-document_version: "2026.1"
+source_url: https://registrar.vinuni.edu.vn/2026/06/29/announcement-launch-of-the-new-student-portal-for-summer-2026-course-registration/
+retrieved_at: 2026-08-03
+document_version: "2026-06-29"
 ---
 
-> Khối metadata phía trên là **template mẫu** cho K3 (bắt buộc: `audience` + `source_url` + `retrieved_at` + `document_version`, cùng ít nhất một trường hữu ích khác như `department`). Thay bằng nguồn công khai thật của nhóm trước khi dùng làm benchmark.
+# Đăng ký học phần VinUni học kỳ Hè 2026
 
-# Đăng ký học phần (dữ liệu khởi động)
+## Cổng đăng ký
 
-Sinh viên đăng ký học phần trong cổng học vụ theo lịch của từng học kỳ. Một học phần có thể yêu cầu học phần tiên quyết; sinh viên cần kiểm tra điều kiện trước khi xác nhận đăng ký.
+Từ học kỳ Hè 2026, VinUniversity thực hiện đăng ký học phần trên cổng VinUniDigi Student Portal. Sinh viên đăng nhập bằng email và mật khẩu VinUniversity được cấp. Sổ tay đăng ký hướng dẫn đăng nhập, đăng ký, xem trạng thái lớp, xử lý lỗi phổ biến, xem lớp đã đăng ký, hủy lớp và xem trước thời khóa biểu.
 
-Khi gặp lỗi trùng lịch, sinh viên điều chỉnh lớp học phần trước thời hạn điều chỉnh được công bố. Mọi yêu cầu ngoại lệ phải được gửi qua kênh hỗ trợ học vụ chính thức.
+## Trạng thái và điều kiện lớp
+
+Trạng thái **Available** cho phép đăng ký. **Full** nghĩa là lớp không còn chỗ. **Conflict** nghĩa là lớp trùng giờ với một lớp đã đăng ký. Hệ thống tự kiểm tra học phần tiên quyết và yêu cầu học trước; sinh viên không được đăng ký nếu chưa thỏa điều kiện.
+
+## Hủy học phần và hỗ trợ
+
+Sinh viên chỉ có thể hủy lớp khi thời gian đăng ký còn mở. Để hủy, chọn biểu tượng Delete cạnh học phần rồi xác nhận OK. Khi gặp vấn đề trong thời gian đăng ký, sinh viên liên hệ Office of the Registrar.
